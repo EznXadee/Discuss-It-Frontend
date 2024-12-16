@@ -1,17 +1,13 @@
-# Netlify configuration file for production deployment
+# Netlify configuration file for Vue 3 with Node.js 21
 [build]
-  # Directory where Vite outputs the built files
-  publish = "dist"
-  # Production build command
-  command = "npm run build"
+  publish = "dist" # Directory where Vite outputs the build files
+  command = "npm run build" # Command to build the production version
 
-[context.production]
-  # Environment variables specific to production
-  [context.production.environment]
-    NODE_ENV = "production"
+[build.environment]
+  NODE_VERSION = "21" # Specify Node.js version explicitly
+  NODE_ENV = "production" # Ensure production environment variables
 
 [[redirects]]
-  # Redirect all requests to index.html to support Vue Router in SPA mode
   from = "/*"
   to = "/index.html"
   status = 200
