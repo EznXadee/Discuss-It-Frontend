@@ -1,0 +1,21 @@
+# Netlify configuration file for production deployment
+[build]
+  # Directory where Vite outputs the built files
+  publish = "dist"
+  # Production build command
+  command = "npm run build"
+
+[context.production]
+  # Environment variables specific to production
+  [context.production.environment]
+    NODE_ENV = "production"
+
+[[redirects]]
+  # Redirect all requests to index.html to support Vue Router in SPA mode
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[functions]
+  # Optional: Specify directory for Netlify serverless functions if any
+  directory = "netlify/functions"
