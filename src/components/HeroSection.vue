@@ -22,7 +22,7 @@
     align-items: center;
     justify-content: flex-end;
     height: 100vh;
-    background: url('./Hero Image-2.png') no-repeat center center;
+    background: url('../assets/Hero Image-2.png') no-repeat center center;
     background-size: cover;
     position: relative;
   }
