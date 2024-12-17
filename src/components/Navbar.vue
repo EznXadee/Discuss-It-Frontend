@@ -17,7 +17,7 @@
 
 <v-autocomplete
             append-inner-icon="mdi-magnify"
-            class="mx-auto"
+            class="search"
             density="comfortable"
             menu-icon=""
             placeholder="Search"
@@ -55,7 +55,7 @@ name: 'Navbar',
 <style scoped >
     .back{
         max-width: 200px;
-        
+        min-width: 116px;
     }
     .select{
         max-width: 150px;
@@ -83,5 +83,39 @@ name: 'Navbar',
     .expert{
         background-color: #292928;
         color: #ffffff;
+    }
+    @media screen and (max-width: 1000px){
+        .maincontent{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .expert{
+            display: none;
+        }
+
+        
+    }
+    @media screen and (max-width: 666px){
+        .search{
+            display: none;
+        }
+
+        .back{
+            max-width: 116px;
+        }
+    }
+
+    @media screen and (max-width: 450px){
+        .member{
+            max-width: 100px;
+            font-size: 10px;
+        }
+        .buttons{
+            gap: 10px;
+            margin: 0;
+        }
     }
 </style>

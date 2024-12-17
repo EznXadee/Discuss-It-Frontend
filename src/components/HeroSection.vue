@@ -62,5 +62,28 @@
   .cta-button:hover {
     background-color: #003366;
   }
+
+  @media screen and (max-width: 768px) {
+    .herosection {
+      justify-content: center;
+    }
+  
+    .content-container {
+      margin: 2rem;
+    }
+  
+    .heading {
+      font-size: 3rem;
+    }
+  
+    .description {
+      font-size: 1.5rem;
+    }
+  
+    .cta-button {
+      font-size: 1.2rem;
+    }
+  }
+  
   </style>
   
