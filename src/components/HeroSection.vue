@@ -7,6 +7,7 @@
         </p>
         <button class="cta-button">Find an Expert</button>
       </div>
+      <div></div>
     </section>
   </template>
   
