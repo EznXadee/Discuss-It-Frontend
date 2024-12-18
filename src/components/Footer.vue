@@ -3,7 +3,7 @@
       <div class="footer-container">
         <!-- Logo -->
         <div class="footer-logo">
-          <img src="@/assets/LOGO.svg" alt="discussit logo" />
+          <img src="@/assets/logo.svg" alt="discussit logo" />
         </div>
   
         <!-- Social Icons -->
