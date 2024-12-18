@@ -90,10 +90,14 @@ name: 'Navbar',
             justify-content: space-between;
             align-items: center;
             gap: 20px;
+            margin-right: 10px;
         }
 
         .expert{
             display: none;
+        }
+        .buttons{
+            margin-right: 10px;
         }
 
         
