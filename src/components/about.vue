@@ -15,7 +15,7 @@
         v-slot="{ isSelected, toggle }"
         >
         <v-btn
-            :color="isSelected ? 'primary' : 'rgb(150, 197, 199)'"
+            :color="isSelected ? 'primary' : 'rgb(58, 110, 165)'"
             class="ma-2"
             rounded
             @click="toggle"
@@ -41,7 +41,7 @@
         v-slot="{ isSelected, toggle }"
         >
         <v-btn
-            :color="isSelected ? 'primary' : 'rgb(150, 197, 199)'"
+            :color="isSelected ? 'primary' : 'rgb(58, 110, 165)'"
             class="ma-2"
             rounded
             @click="toggle"
@@ -54,13 +54,13 @@
         <v-card
     
     max-width="400"
-    v-for="n in 3"
+    v-for="n in 4"
     :key="n"
   >
     <v-img
       class="align-end text-white"
       height="200"
-      src="https://cdn.vuetifyjs.com/images/cards/docks.jpg"
+      :src="images[n - 1]"
       cover
     >
       
@@ -86,9 +86,21 @@
 </section>
 </template>
 <script>
+import Image2 from "@/assets/Image-2.png";
+import Image3 from "@/assets/Image-3.png";
+import Image4 from "@/assets/Image-4.png";
+import Image5 from "@/assets/Image-5.png";
+
 export default {
-    name: 'AboutUs',
-}
+  name: 'AboutUs',
+  data() {
+    return {
+      images: [Image2, Image3, Image4, Image5]
+    };
+  }
+};
+
+
 </script>
 <style scoped>
     .aboutus{
@@ -102,7 +114,7 @@ export default {
         margin: auto;
     }
     .slide{
-        background-color: rgb(150, 197, 199);
+        background-color: rgb(58, 110, 165);
         border-radius: 20px;
         z-index: 999;
     }
@@ -127,7 +139,7 @@ export default {
         z-index: 0;
     }
     .cards{
-        width: 90%;
+        width: 100%;
         /* border: 1px solid black\\\\\\\\; */
         height: 400px;
         margin: auto;
