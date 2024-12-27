@@ -9,12 +9,12 @@
 </template>
 
 <script setup>
-  import Navbar from '@/components/Navbar.vue'
-  import HeroSection from '@/components/HeroSection.vue'
-  import AboutUs from '@/components/about.vue'
-  import Done from '@/components/Done.vue'
-  import Carousal from '@/components/carousal.vue'
-  import Footer from '@/components/Footer.vue'
+  import Navbar from '@/components/landingPage/Navbar.vue'
+  import HeroSection from '@/components/landingPage/HeroSection.vue'
+  import AboutUs from '@/components/landingPage/about.vue'
+  import Done from '@/components/landingPage/Done.vue'
+  import Carousal from '@/components/landingPage/carousal.vue'
+  import Footer from '@/components/landingPage/Footer.vue'
 
 </script>
 
