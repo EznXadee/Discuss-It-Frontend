@@ -6,7 +6,7 @@
 
 <v-app-bar-title>
     <div class="maincontent">
-        <v-img src="../assets/logo.svg" alt="logo" max-height="40" class="back"/>
+        <v-img src="@/assets/logo.svg" alt="logo" max-height="40" class="back"/>
     <v-select
     class="select"
     style="background-color:transparent;"
